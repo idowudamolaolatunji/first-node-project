@@ -14,10 +14,6 @@ const walletSchema = new mongoose.Schema({
 });
 
 
-// cndjcndjcjdncjndc
-
-
-
 walletSchema.pre(/^find/, function(next) {
     this.populate({
         path: 'user',
